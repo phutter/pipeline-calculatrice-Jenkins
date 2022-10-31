@@ -15,7 +15,7 @@ pipeline {
         stage('Branch') {
             agent any
             steps {
-                echo 'nom-de-la-branche'
+                echo 'Branche_calc'
             }
         }
         stage('Test') {
