@@ -12,6 +12,12 @@ pipeline {
                 stash(name: 'compiled-results', includes: 'sources/*.py*')
             }
         }
+        stage('Branch') {
+            agent any
+            steps {
+                echo 'nom-de-la-branche'
+            }
+        }
         stage('Test') {
             agent {
                 docker {
